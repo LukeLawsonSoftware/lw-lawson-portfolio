@@ -1,0 +1,34 @@
+[
+      {
+          "id" : "cloud-native-arch",
+          "title": "Cloud-Native Architecture",
+          "description":
+            "A case study on building scalable cloud-native applications with microservices and Kubernetes.",
+          "imageUrl":
+            "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+          "technologies": ["Kubernetes", "Microservices", "Terraform", "Cloud"],
+          "githubUrl": "https://github.com/your-username/cloud-native-demo"
+      },
+      {
+          "id" : "developer-blog-platform",
+          "title": "Developer Blog Platform",
+          "description":
+            "A markdown-based blog platform designed for developers to share technical articles and tutorials.",
+          "imageUrl":
+            "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+          "technologies": ["Next.js", "TypeScript", "TailwindCSS", "MDX"],
+          "githubUrl": "https://github.com/your-username/dev-blog",
+          "liveUrl": "https://your-dev-blog-url.com"
+      },
+      {
+          "id" : "e-commerce-app",
+          "title": "Recipe Finder",
+          "description":
+            "A web application that helps users find recipes based on available ingredients or dietary restrictions.",
+          "imageUrl":
+            "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+          "technologies": ["React", "Redux", "Spoonacular API"],
+          "githubUrl": "https://github.com/your-username/recipe-finder",
+          "liveUrl": "https://your-recipe-app-url.com"
+      }
+]

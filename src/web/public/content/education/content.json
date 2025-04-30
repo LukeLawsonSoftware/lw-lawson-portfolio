@@ -1,0 +1,26 @@
+[
+    {
+        "qualification" : "BScHons Computer Science",
+        "institution" : "University of Pretoria",
+        "imageUrl" : "UPLogo.jpeg",
+        "grade" : "In porgress - Distinction",
+        "startDate" : "January 2024",
+        "endDate" : "November 2025"
+    },
+    {
+        "qualification" : "BSc Computer Science",
+        "institution" : "University of Pretoria",
+        "imageUrl" : "UPLogo.jpeg",
+        "grade" : "Distinction - 91.78%",
+        "startDate" : "January 2021",
+        "endDate" : "November 2023"
+    },
+    {
+        "qualification" : "Matric",
+        "institution" : "St David's Marist Inanda",
+        "imageUrl" : "StDavidsLogo.png",
+        "grade" : "94.7% - 8 Distinctions",
+        "startDate" : "January 2016",
+        "endDate" : "November 2020"
+    }
+]

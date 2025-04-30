@@ -1,0 +1,26 @@
+[
+    {
+        "title" : "Platform Engineer",
+        "organisation" : "Investec",
+        "imageUrl" : "Investec.jpg",
+        "description" : "Currently working toeards building the Channel Data and Insights platform, largely an integration full-stack and cloud engineering role in the context of digital behavioural and servicing data", 
+        "startDate" : "January 2024",
+        "endDate" : "December 2024"
+    },
+    {
+        "title" : "Data Engineer and Analyst",
+        "organisation" : "Investec",
+        "imageUrl" : "Invstec.jpg",
+        "description" : "Worked as a data engineer in the Channel Data and Insights team. I work with an Azure stack of data engineering tools to perform automation, design, and solutioning of data products at scale.", 
+        "startDate" : "January 2024",
+        "endDate" : "December 2024"
+    },
+    {
+        "title" : "Computer Science Tutor",
+        "organisation" : "University of Pretoria",
+        "imageUrl" : "UPLogo.jpeg",
+        "description" : "I tutored the second-year modules Theoretical Computer Science and Data Structures and Algorithms. Between the two modules, duties included helping students gets to grips with the content, marking assignments and tests, and consulting with students on their practical", 
+        "startDate" : "February 2023",
+        "endDate" : "June 2023"
+    }
+]
