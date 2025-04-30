@@ -7,5 +7,6 @@ export const SHARED = {
       blogBase: '/content/projects/blog/',
     },
     profile: '/content/profile/content.json',
+    certifications: '/content/certifications/content.json',
   },
 };

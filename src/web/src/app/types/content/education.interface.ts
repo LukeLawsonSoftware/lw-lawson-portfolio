@@ -5,4 +5,5 @@ export interface EducationItem {
   endDate: string;
   imageUrl: string;
   grade: string;
+  description: string;
 }

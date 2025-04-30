@@ -3,24 +3,27 @@
         "qualification" : "BScHons Computer Science",
         "institution" : "University of Pretoria",
         "imageUrl" : "UPLogo.jpeg",
-        "grade" : "In porgress - Distinction",
+        "grade" : "90%+ - In progress",
         "startDate" : "January 2024",
-        "endDate" : "November 2025"
+        "endDate" : "November 2025",
+        "description" : "Selected a broad range of courese, with modules in: cyber-security, model checking, neural networks, digital forensics, software engineering, and data science. Completing a research project about strategy synthesis in concurrent stochastic games for multi-agent resource allocation. Completing part-time (over 2 years)."
     },
     {
         "qualification" : "BSc Computer Science",
         "institution" : "University of Pretoria",
         "imageUrl" : "UPLogo.jpeg",
-        "grade" : "Distinction - 91.78%",
+        "grade" : "91.78% - with Distinction",  
         "startDate" : "January 2021",
-        "endDate" : "November 2023"
+        "endDate" : "November 2023",
+        "description" : "Computer science is a broad and fascinating field with countless practical applications underpinned by a strong theoretical and mathematical basis. "
     },
     {
-        "qualification" : "Matric",
+        "qualification" : "Matric (IEB)",
         "institution" : "St David's Marist Inanda",
         "imageUrl" : "StDavidsLogo.png",
         "grade" : "94.7% - 8 Distinctions",
         "startDate" : "January 2016",
-        "endDate" : "November 2020"
+        "endDate" : "November 2020",
+        "description" : "Completed by high school education at St David's Marist Inanda. Matriculated as Dux Scholar with 8 distinctions."
     }
 ]

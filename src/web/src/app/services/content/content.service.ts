@@ -7,6 +7,7 @@ import {
   ProjectBlogItem,
 } from '../../types/content/project.interface';
 import { Profile } from '../../types/content/profile.interface';
+import { CertificationCategory } from '../../types/content/certification.interface';
 import { environment } from '../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
 
@@ -28,6 +29,12 @@ export class ContentService {
 
   getAllEducationItems(): Observable<EducationItem[]> {
     return this.http.get<EducationItem[]>(this.URLS.content.education);
+  }
+
+  getAllCertificationCategories(): Observable<CertificationCategory[]> {
+    return this.http.get<CertificationCategory[]>(
+      this.URLS.content.certifications
+    );
   }
 
   getAllProjectMetaItems(): Observable<ProjectMetaItem[]> {

@@ -1,0 +1,4 @@
+/* Card-specific styles */
+:host {
+  display: block;
+}

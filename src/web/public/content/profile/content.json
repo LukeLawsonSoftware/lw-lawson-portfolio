@@ -1,9 +1,9 @@
 {
     "name" : "Luke Lawson",
     "title" : "Platform Engineer",
-    "intro" : "lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue.",
+    "intro" : "Hi there! I'm Luke, an enthusiastic software engineer who likes to do a little bit of everything. My interests include, AI, data science and engineering, software architecture, cyber security, full-stack development, and formal methods and computer science",
     "aboutMe" : [
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue.",
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue."
+        "I am currently based in Johannesburg, South Africa, where I am working as a Platform Engineer at Investec. I am also currently completing my BScHons in Computer Science at the University of Pretoria. I really like to do a bit of everything, so I sometimes jokingly call myself a 'miscallaneous engineer'.",
+        "In my spare time, I love to get distracted by a side project, go down the rabbit hole with a new idea, or do the odd hackathon. In the real world outside of tech, I am an avid rugby fan - go Lions! I also love to travel to world and visit new places. I have been to 10 countries so far, and I am always keen to visit another! I enjoy reading as well - primarily non-fiction books."
     ]
 }

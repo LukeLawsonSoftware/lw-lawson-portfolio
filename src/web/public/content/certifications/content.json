@@ -1,0 +1,150 @@
+[
+  {
+    "id": "cloud",
+    "name": "Cloud Computing",
+    "certifications": [
+      {
+        "id": "az-104",
+        "name": "AZ-104 | Microsoft Certified: Azure Administrator Associate",
+        "issuer": "Microsoft",
+        "issueDate": "March 2025",
+        "expiryDate": "March 2026",
+        "credentialUrl": "https://learn.microsoft.com/en-us/users/lukelawson-2526/credentials/efeaf3537a268a3b"
+      },
+      {
+        "id": "az-204",
+        "name": "AZ-204 | Microsoft Certified: Azure Developer Associate",
+        "issuer": "Microsoft",
+        "issueDate": "January 2025",
+        "expiryDate": "January 2026",
+        "credentialUrl": "https://learn.microsoft.com/en-us/users/lukelawson-2526/credentials/8beba677e9a82cc1"
+      },
+      {
+        "id": "dp-100",
+        "name": "DP-100 | Microsoft Certified: Azure Data Scientist Associate",
+        "issuer": "Microsoft",
+        "issueDate": "August 2024",
+        "expiryDate": "August 2026",
+        "credentialUrl": "https://learn.microsoft.com/en-us/users/lukelawson-2526/credentials/c3a14b83d6c34e46"
+      },
+      {
+        "id": "ai-900",
+        "name": "AI-900 | Microsoft Certified: Azure AI Fundamentals",
+        "issuer": "Microsoft",
+        "issueDate": "May 2024",
+        "credentialUrl": "https://learn.microsoft.com/en-us/users/lukelawson-2526/credentials/143cf7f2a966868"
+      },
+      {
+        "id": "az-900",
+        "name": "AZ-900 | Microsoft Certified: Azure Fundamentals",
+        "issuer": "Microsoft",
+        "issueDate": "May 2024",
+        "credentialUrl": "https://learn.microsoft.com/en-us/users/lukelawson-2526/credentials/27de09106a6d8cda"
+      }
+    ]
+  },
+  {
+    "id": "programming-languages-frameworks",
+    "name": "Programming Language + Frameworks",
+    "certifications": [
+      {
+        "id": "complete-python-mastery",
+        "name": "Complete Python Mastery",
+        "issuer": "Code With Mosh",
+        "issueDate": "December 2022",
+        "credentialUrl": "https://codewithmosh.com/p/python-programming-course-beginners"
+      },
+      {
+        "id": "matlab-optimisation-onramp",
+        "name": "MATLAB Optimization Onramp",
+        "issuer": "MathWorks",
+        "issueDate": "March 2023",
+        "credentialUrl": "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=de59fa67-b60a-4df9-8159-61d3144aa810&"
+      }
+    ]
+  },
+  {
+    "id" : "ai-ml",
+    "name" : "AI + ML",
+    "certifications" : [
+
+      {
+        "id": "dp-100",
+        "name": "DP-100 | Microsoft Certified: Azure Data Scientist Associate",
+        "issuer": "Microsoft",
+        "issueDate": "August 2024",
+        "expiryDate": "August 2026",
+        "credentialUrl": "https://learn.microsoft.com/en-us/users/lukelawson-2526/credentials/c3a14b83d6c34e46"
+      },
+      {
+        "id": "ai-900",
+        "name": "AI-900 | Microsoft Certified: Azure AI Fundamentals",
+        "issuer": "Microsoft",
+        "issueDate": "May 2024",
+        "credentialUrl": "https://learn.microsoft.com/en-us/users/lukelawson-2526/credentials/143cf7f2a966868"
+      },
+      {
+        "id": "deep-learning-az",
+        "name": "Deep Learning A-Z 2023",
+        "issuer": "Udemy | SuperDataScience",
+        "issueDate": "January 2024",
+        "credentialUrl": "https://www.udemy.com/certificate/UC-639b13ec-a8f0-454f-9996-d14ee340ca33/"
+      },
+      {
+        "id": "deep-learning-matlab",
+        "name": "Deep Learning with MATLAB",
+        "issuer": "MathWorks",
+        "issueDate": "September 2023",
+        "credentialUrl": "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=ab7186a4-cdb9-4e37-aff1-2e79e1692931&"
+      },
+      {
+        "id": "deep-learning-onramp",
+        "name": "MATLAB Deep Learning Onramp",
+        "issuer": "MathWorks",
+        "issueDate": "March 2023",
+        "credentialUrl": "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=193df07e-5791-4bf2-a190-98d3450cb792&"
+      },
+      {
+        "id": "machine-learning-onramp",
+        "name": "Machine Learning Onramp",
+        "issuer": "MathWorks",
+        "issueDate": "March 2023",
+        "credentialUrl": "https://matlabacademy.mathworks.com/progress/share/certificate.html?id=9dd43a99-71bf-4670-bb06-872e2f0f2872&"
+      }
+
+    ]
+  },
+  {
+    "id": "cyber-security",
+    "name": "Cyber Security",
+    "certifications": [
+      {
+        "id": "jnr-penetration-tester",
+        "name": "Jr Penetration Tester Learning Path",
+        "issuer": "TryHackMe",
+        "issueDate": "December 2023",
+        "credentialUrl": "https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-9VCACBMKDQ.png"
+      }
+    ]
+  },
+  {
+    "id": "misc",
+    "name": "Others",
+    "certifications": [
+      {
+        "id": "growth-hacking",
+        "name": "Growth Hacking with Digital Marketing [2024]",
+        "issuer": "Udemy | Eazl",
+        "issueDate": "January 2024",
+        "credentialUrl": "https://www.udemy.com/certificate/UC-602d7367-65c4-4f24-87a7-8f9534925a77/"
+      },
+      {
+        "id": "qbronze-qiskit",
+        "name": "QBronze using Qiskit Diploma",
+        "issuer": "QWorld",
+        "issueDate": "August 2023 - ID: QBronze109-24",
+        "credentialUrl": "https://qworld.net/workshop-bronze/"
+      }
+    ]
+  }
+]

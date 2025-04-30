@@ -1,0 +1,39 @@
+<div class="p-6">
+  <h2 class="text-2xl font-semibold mb-4 dark:text-white">My Certifications</h2>
+
+  <div
+    class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 mb-8 border border-gray-100 dark:border-gray-700 shadow-sm dark:shadow-md"
+  >
+    <p class="text-gray-700 dark:text-gray-100 mb-3">
+      I think that continuous learning and development is extremely important,
+      so I try to do a new course or certification every now and then. Below is
+      a collection of some of the learnings I have completed over the past
+      while.
+    </p>
+  </div>
+
+  <div *ngIf="loading" class="flex justify-center items-center py-10">
+    <div
+      class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-accent"
+    ></div>
+  </div>
+
+  <div
+    *ngIf="!loading && error"
+    class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded"
+  >
+    <p>
+      There was an error loading the certifications data. Please try again
+      later.
+    </p>
+  </div>
+
+  <div *ngIf="!loading && !error" class="space-y-8">
+    <app-certification-category
+      *ngFor="let category of certificationCategories"
+      [category]="category"
+      class="block mb-8"
+    >
+    </app-certification-category>
+  </div>
+</div>

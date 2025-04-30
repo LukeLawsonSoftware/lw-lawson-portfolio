@@ -3,7 +3,7 @@
         "title" : "Platform Engineer",
         "organisation" : "Investec",
         "imageUrl" : "Investec.jpg",
-        "description" : "Currently working toeards building the Channel Data and Insights platform, largely an integration full-stack and cloud engineering role in the context of digital behavioural and servicing data", 
+        "description" : "Currently holding a position as a Platform Engineer in the Channel Data & Insights team at Investec. This is a primarily integration, full-stack and cloud engineering role working on the channel (digital and servicing) data and analytics platform.", 
         "startDate" : "January 2024",
         "endDate" : "December 2024"
     },
@@ -11,7 +11,7 @@
         "title" : "Data Engineer and Analyst",
         "organisation" : "Investec",
         "imageUrl" : "Invstec.jpg",
-        "description" : "Worked as a data engineer in the Channel Data and Insights team. I work with an Azure stack of data engineering tools to perform automation, design, and solutioning of data products at scale.", 
+        "description" : "Joined Investec as part of the Tech Grad cohort of 2024. I joined the Channel Data & Insights team, where I work primarily as a data engineer and analyst, building data pipelines for the ingestion and modeling for both pre and post login digital behaviour data.", 
         "startDate" : "January 2024",
         "endDate" : "December 2024"
     },
@@ -19,7 +19,7 @@
         "title" : "Computer Science Tutor",
         "organisation" : "University of Pretoria",
         "imageUrl" : "UPLogo.jpeg",
-        "description" : "I tutored the second-year modules Theoretical Computer Science and Data Structures and Algorithms. Between the two modules, duties included helping students gets to grips with the content, marking assignments and tests, and consulting with students on their practical", 
+        "description" : "I tutored two second-year modules: Theoretical Computer Science, and Data Structures and Algorithms. Between the two modules, duties included helping students understand the content, marking assignments and tests, and advising students on their practical work.", 
         "startDate" : "February 2023",
         "endDate" : "June 2023"
     }
