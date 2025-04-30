@@ -1,0 +1,32 @@
+<section class="my-8">
+  <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4">
+    Education
+  </h2>
+
+  <div class="space-y-6">
+    <div
+      *ngFor="let education of educationList"
+      class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg"
+    >
+      <div class="flex gap-4">
+        <!-- Content -->
+        <div class="flex-1">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+              {{ education.institution }}
+            </h3>
+            <span class="text-sm text-gray-500 dark:text-gray-400"
+              >{{ education.startDate }} - {{ education.endDate }}</span
+            >
+          </div>
+          <div
+            class="text-md font-medium text-accent dark:text-accent-light mb-2"
+          >
+            {{ education.qualification }}
+          </div>
+          <p class="text-gray-600 dark:text-gray-300">{{ education.grade }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

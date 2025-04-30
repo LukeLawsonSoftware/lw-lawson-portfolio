@@ -1,0 +1,83 @@
+/* Biography component styles */
+:host {
+  display: block;
+}
+
+/* Hover effects for skill bars */
+.bg-accent {
+  transition: width 0.5s ease-in-out;
+}
+
+/* Button hover animations */
+.inline-flex {
+  transition: all 0.3s ease;
+}
+
+.inline-flex:hover {
+  transform: translateY(-2px);
+}
+
+/* Card hover effects */
+.bg-white {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bg-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Image hover effect */
+.rounded-lg img {
+  transition: transform 0.5s ease;
+}
+
+.rounded-lg:hover img {
+  transform: scale(1.05);
+}
+
+/* Dark mode specific adjustments */
+:host-context(.dark-theme) .dark\:bg-gray-800 {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll indicator styles */
+.scroll-indicator, .scroll-to-top {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-indicator:hover, .scroll-to-top:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-indicator.opacity-0, .scroll-to-top.opacity-0, .scroll-hint.opacity-0 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-hint {
+  transition: opacity 0.3s ease-in-out;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 9999px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+:host-context(.dark-theme) .scroll-hint {
+  background-color: rgba(31, 41, 55, 0.8);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1.5s infinite;
+}

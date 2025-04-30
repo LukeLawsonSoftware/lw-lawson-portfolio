@@ -1,0 +1,22 @@
+<div class="relative">
+  <!-- Main Content -->
+  <div class="p-6">
+    <app-bio-hero></app-bio-hero>
+    <app-bio-about></app-bio-about>
+    <app-bio-education></app-bio-education>
+    <app-bio-experience></app-bio-experience>
+    
+    <!-- Bottom target for scrolling -->
+    <div id="biography-bottom" class="py-8"></div>
+  </div>
+  
+  <!-- Scroll Down Indicator -->
+  <div class="scroll-indicator fixed bottom-8 right-8 animate-bounce bg-accent dark:bg-accent-light p-2 rounded-full shadow-lg cursor-pointer z-10" 
+       [class.opacity-0]="isScrolledToBottom || scrollPosition > 300" 
+       (click)="scrollDown()">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </div>
+
+</div>
