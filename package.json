@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "dev": "npm run dev:web",
+        "dev:web" : "cd src/web && npm run start"
+    }
+}
