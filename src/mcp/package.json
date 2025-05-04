@@ -9,15 +9,5 @@
     "lint:fix": "biome lint --fix",
     "start": "wrangler dev",
     "cf-typegen": "wrangler types"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250430.0",
-    "typescript": "^5.5.2",
-    "wrangler": "^4.14.0"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.7.0",
-    "agents": "^0.0.65",
-    "zod": "^3.24.2"
   }
 }
