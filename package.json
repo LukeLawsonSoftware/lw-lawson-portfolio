@@ -1,6 +1,17 @@
 {
     "scripts": {
         "dev": "npm run dev:web",
-        "dev:web" : "cd src/web && npm run start"
+        "deploy": "npm run deploy:web",
+        "dev:web" : "cd src/web && npm run start",
+        "dev:mcp" : "cd src/mcp && npm run start",
+        "build:web" : "cd src/web && npm run build",
+        "build:mcp" : "cd src/mcp && npm run build",
+        "deploy:web" : "npm run build:web && npx wrangler deploy",
+        "deploy:mcp" : "npm run build:mcp && npx wrangler deploy"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20250430.0",
+        "typescript": "^5.5.2",
+        "wrangler": "^4.14.0"
     }
 }
