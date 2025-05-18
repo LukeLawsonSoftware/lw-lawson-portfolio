@@ -6,6 +6,7 @@
 		"nodejs_compat"
 	],
     "assets": {
+	  "binding": "ASSETS",
       "directory": "./src/web/dist/browser",
       "not_found_handling": "single-page-application"
     },

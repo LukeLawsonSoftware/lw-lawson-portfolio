@@ -1,75 +1,60 @@
 import { McpAgent } from "agents/mcp";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
+import type { ExecutionContext, Fetcher } from "@cloudflare/workers-types";
+
+interface Env {
+  ASSETS: Fetcher;
+}
 
 // Define our MCP agent with tools
 export class MyMCP extends McpAgent {
   server = new McpServer({
-    name: "Authless Calculator",
+    name: "Luke Bot",
     version: "1.0.0",
   });
 
-  async init() {
-    // Simple addition tool
-    this.server.tool(
-      "add",
-      { a: z.number(), b: z.number() },
-      async ({ a, b }) => ({
-        content: [{ type: "text", text: String(a + b) }],
-      })
-    );
+  static cfEnv: Env;
+  static cfRequest: Request;
 
-    // Calculator tool with multiple operations
+  static setup(request: Request, env: Env, ctx: ExecutionContext) {
+    MyMCP.cfEnv = env;
+    MyMCP.cfRequest = request;
+  }
+
+  async init() {
+    // Tool to fetch information about me
     this.server.tool(
-      "calculate",
+      "fetch-info-about-luke",
       {
-        operation: z.enum(["add", "subtract", "multiply", "divide"]),
-        a: z.number(),
-        b: z.number(),
+        info: z.enum(["certifications", "education", "experience", "profile"]),
       },
-      async ({ operation, a, b }) => {
-        let result: number;
-        switch (operation) {
-          case "add":
-            result = a + b;
-            break;
-          case "subtract":
-            result = a - b;
-            break;
-          case "multiply":
-            result = a * b;
-            break;
-          case "divide":
-            if (b === 0)
-              return {
-                content: [
-                  {
-                    type: "text",
-                    text: "Error: Cannot divide by zero",
-                  },
-                ],
-              };
-            result = a / b;
-            break;
-        }
-        return { content: [{ type: "text", text: String(result) }] };
+      async ({ info }) => {
+        const resourceLocation = `/content/${info}/content.json`;
+
+        const url = new URL(MyMCP.cfRequest.url);
+        const host = url.origin;
+
+        const res = await MyMCP.cfEnv.ASSETS.fetch(host + resourceLocation);
+        const jsonString = await res.text();
+
+        return { content: [{ type: "text", text: jsonString }] };
       }
     );
   }
 }
 
 export default {
-  // @ts-ignore
-  fetch(request: Request, env: Env, ctx: ExecutionContext) {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext) {
     const url = new URL(request.url);
 
+    MyMCP.setup(request, env, ctx);
+
     if (url.pathname === "/sse" || url.pathname === "/sse/message") {
-      // @ts-ignore
       return MyMCP.serveSSE("/sse").fetch(request, env, ctx);
     }
 
     if (url.pathname === "/mcp") {
-      // @ts-ignore
       return MyMCP.serve("/mcp").fetch(request, env, ctx);
     }
 
