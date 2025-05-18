@@ -14,14 +14,6 @@ export class MyMCP extends McpAgent {
     version: "1.0.0",
   });
 
-  static cfEnv: Env;
-  static cfRequest: Request;
-
-  static setup(request: Request, env: Env, ctx: ExecutionContext) {
-    MyMCP.cfEnv = env;
-    MyMCP.cfRequest = request;
-  }
-
   async init() {
     // Tool to fetch information about me
     this.server.tool(
@@ -30,14 +22,11 @@ export class MyMCP extends McpAgent {
         info: z.enum(["certifications", "education", "experience", "profile"]),
       },
       async ({ info }) => {
-        const resourceLocation = `/content/${info}/content.json`;
-
-        const url = new URL(MyMCP.cfRequest.url);
-        const host = url.origin;
-
-        const res = await MyMCP.cfEnv.ASSETS.fetch(host + resourceLocation);
-        const jsonString = await res.text();
-
+        const resourceLocation = `content/${info}/content.json`;
+        const jsonString = await fetch(
+          "https://lw-lawson-portfolio.lawsonluke2002.workers.dev/" +
+            resourceLocation
+        ).then((res) => res.text());
         return { content: [{ type: "text", text: jsonString }] };
       }
     );
@@ -46,9 +35,8 @@ export class MyMCP extends McpAgent {
 
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext) {
+    // Store the current request for URL resolution in tools
     const url = new URL(request.url);
-
-    MyMCP.setup(request, env, ctx);
 
     if (url.pathname === "/sse" || url.pathname === "/sse/message") {
       return MyMCP.serveSSE("/sse").fetch(request, env, ctx);
@@ -58,6 +46,6 @@ export default {
       return MyMCP.serve("/mcp").fetch(request, env, ctx);
     }
 
-    return new Response("Not found", { status: 404 });
+    return env.ASSETS.fetch(request.url);
   },
 };

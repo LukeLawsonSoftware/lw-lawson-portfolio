@@ -1,0 +1,8 @@
+{
+    "servers": {
+        "luke-bot": {
+            "type": "sse",
+            "url": "https://lw-lawson-portfolio.lawsonluke2002.workers.dev/sse"
+        }
+    }
+}
